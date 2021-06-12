@@ -1,0 +1,167 @@
+@font-face{
+	font-family: roboto_medium;
+	src:url("Roboto-Medium.ttf");
+}
+body
+{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh; 	
+	margin: 0px; 
+	font-family: roboto_medium; 
+}
+#header
+{
+	display: flex;
+	align-items: center;
+	background-color: black;
+	color: white;
+	height: 10%;
+}
+#heading
+{
+	margin: 0px auto;
+	font-size: 25px;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+    cursor: pointer;
+}
+
+#body
+{
+	display: flex;
+    /*background: #49494b;*/
+	flex-direction: row;
+	align-items: center;
+	height: 90%;
+    background-color: white;
+}
+
+#tweet_slider_space
+{
+	display: block;
+	width: 40%;
+	height: 100%;
+	/*border: solid;
+	border-color: green;*/
+	
+}
+
+#tweet_slider
+{
+	display: block;
+	position: relative;
+	top:5%;
+	margin-left: 10%;
+	margin-right:  10%;
+	margin-bottom: 15%;
+	height: 60%;
+	border: solid;
+	border-color: black;
+	border-radius: 20px;
+    background: white;
+	padding: 20px;
+	overflow: hidden;
+	box-shadow: 
+        inset 0px 20px 8px -10px #CCC,
+        inset 0px -30px 8px -10px #CCC; 
+	
+}
+
+
+.tweet
+{
+	display: block;
+	position: relative;
+	border-top: solid;
+	border-bottom: solid;
+	padding: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border-color: black;
+}
+
+#control_btn_space
+{
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 15%;
+	position: relative;
+	
+	margin-left: 10%;
+	margin-right:  10%;
+}
+#control_btn_space>div
+{
+	flex: 1;
+}
+#stop_btn
+{
+	float: right;
+	right: 0px;
+	margin-right: 10%;
+	/*border-radius: 12px;*/
+	padding: 10px;
+	background-color: red;
+    border-color: red;
+	font-size: 21px;
+    color: white;
+}
+#download_btn
+{
+	margin: 0px auto;	
+	/*border-radius: 12px;*/
+	padding: 10px;
+	background-color: green;
+    border-color: green;
+	font-size: 21px;
+	color: white;
+}
+#prediction_tab
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 5px; 
+	/*display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	
+	align-items: stretch;
+	*/
+	width: 60%;
+	height: 100%;
+	border: solid;
+	border-width: 0px;
+	border-color: yellow;
+
+
+}
+.prediction
+{
+	display: block;
+	/*flex: 1 1 0px;*/
+	text-align: center;
+	/*background-color: #bd8c7d;*/
+	background-color: black;
+	border-radius: 12px;
+	margin: 5px;
+	padding: 1px;
+	transform-style: preserve-3d;
+    perspective: 1000px;
+	
+}
+.prediction_count , .prediction_title
+{
+    color: white;
+}
+.stopNotification
+{
+    color : black;
+    margin-left: auto;
+    margin-right: auto;
+}
